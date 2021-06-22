@@ -1,144 +1,247 @@
-.kineto__scope,.kineto-scope{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-tap-highlight-color:tranparent;-webkit-touch-callout:none}.kineto__scope:hover,.kineto-scope:hover{cursor:move;cursor:-webkit-grab;cursor:grab}.kineto--swiping .kineto--scope:hover,.kineto--swiping .kineto-scope:hover,.kineto-swiping .kineto--scope:hover,.kineto-swiping .kineto-scope:hover{cursor:-webkit-grabbing;cursor:grabbing}.kineto__slide,.kineto-slide{overflow:hidden}.kineto__arrow,.kineto-arrow{line-height:.001px;font-size:.001px;text-align:center}.kineto__arrow__button,.kineto-arrow-button{display:inline-block;padding:0;color:inherit;background:transparent none;border:0 none;-webkit-appearance:none;-moz-appearance:none;appearance:none;touch-action:manipulation;position:relative;padding:9px;box-sizing:content-box;z-index:1;font-size:1rem}.kineto__arrow__button--disabled,.kineto-arrow-button.kineto-disabled{opacity:.2;cursor:not-allowed;touch-action:none}.kineto__arrow__icon,.kineto-arrow-icon{width:36px;height:36px;vertical-align:middle;pointer-events:none}.kineto__pagination,.kineto-pagination{line-height:.001px;font-size:.001px;text-align:center}.kineto__pagination__button,.kineto-pagination-button{display:inline-block;padding:0;color:inherit;background:transparent none;border:0 none;-webkit-appearance:none;-moz-appearance:none;appearance:none;touch-action:manipulation;position:relative;width:12px;height:12px;padding:6px;margin:0 0;box-sizing:content-box;z-index:1;background:currentColor;background-clip:content-box;opacity:.4;font-size:1rem;line-height:1.5em}.kineto__pagination__button--active,.kineto-pagination-button.kineto-active{opacity:1;pointer-events:none}.kineto__pagination__button__text,.kineto-pagination-button-text{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0)}
+.kineto__scope, .kineto-scope {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: tranparent;
+    -webkit-touch-callout: none
+}
+
+.kineto__scope:hover, .kineto-scope:hover {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.kineto--swiping .kineto--scope:hover, .kineto--swiping .kineto-scope:hover, .kineto-swiping .kineto--scope:hover, .kineto-swiping .kineto-scope:hover {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.kineto__slide, .kineto-slide {
+    overflow: hidden
+}
+
+.kineto__arrow, .kineto-arrow {
+    line-height: .001px;
+    font-size: .001px;
+    text-align: center
+}
+
+.kineto__arrow__button, .kineto-arrow-button {
+    display: inline-block;
+    padding: 0;
+    color: inherit;
+    background: transparent none;
+    border: 0 none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+    position: relative;
+    padding: 9px;
+    box-sizing: content-box;
+    z-index: 1;
+    font-size: 1rem
+}
+
+.kineto__arrow__button--disabled, .kineto-arrow-button.kineto-disabled {
+    opacity: .2;
+    cursor: not-allowed;
+    touch-action: none
+}
+
+.kineto__arrow__icon, .kineto-arrow-icon {
+    width: 36px;
+    height: 36px;
+    vertical-align: middle;
+    pointer-events: none
+}
+
+.kineto__pagination, .kineto-pagination {
+    line-height: .001px;
+    font-size: .001px;
+    text-align: center
+}
+
+.kineto__pagination__button, .kineto-pagination-button {
+    display: inline-block;
+    padding: 0;
+    color: inherit;
+    background: transparent none;
+    border: 0 none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    touch-action: manipulation;
+    position: relative;
+    width: 12px;
+    height: 12px;
+    padding: 6px;
+    margin: 0 0;
+    box-sizing: content-box;
+    z-index: 1;
+    background: currentColor;
+    background-clip: content-box;
+    opacity: .4;
+    font-size: 1rem;
+    line-height: 1.5em
+}
+
+.kineto__pagination__button--active, .kineto-pagination-button.kineto-active {
+    opacity: 1;
+    pointer-events: none
+}
+
+.kineto__pagination__button__text, .kineto-pagination-button-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0)
+}
 .carousel {
-            position: relative;
-            width: 100%;
-            margin-bottom: 20px;
-        }
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-        .slide {
-            width: 100%;
-            height: 300px;
-            box-sizing: border-box;
-            background-color: rgb(52, 73, 85);
-            line-height: 1.15em;
-            font-size: 3rem;
-            text-align: center;
-            /* transition: background-color .3s; */
-        }
+.slide {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: rgb(52, 73, 85);
+    line-height: 1.15em;
+    font-size: 3rem;
+    text-align: center;
+    /* transition: background-color .3s; */
+}
 
-        .slide::before,
-        .slide::after,
-        .slide .count {
-            display: inline-block;
-            vertical-align: middle;
-        }
+.slide::before,
+.slide::after,
+.slide .count {
+    display: inline-block;
+    vertical-align: middle;
+}
 
-        .slide::before,
-        .slide::after {
-            content: '';
-            width: 1px;
-            height: 100%;
-        }
+.slide::before,
+.slide::after {
+    content: '';
+    width: 1px;
+    height: 100%;
+}
 
-        .carousel [tabindex]:focus,
-        .carousel button:focus {
-            outline: 0;
-        }
+.carousel [tabindex]:focus,
+.carousel button:focus {
+    outline: 0;
+}
 
-        .carousel [tabindex='0']:focus,
-        .carousel button:focus {
-            box-shadow: inset 0 0 0 2px rgba(249, 170, 51, 0.6);
-        }
+.carousel [tabindex='0']:focus,
+.carousel button:focus {
+    box-shadow: inset 0 0 0 2px rgba(249, 170, 51, 0.6);
+}
 
-        .kineto__frame,
-        .kineto-frame {
-            color: rgb(255, 255, 255);
-            background-color: rgb(74, 101, 114);
-            transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
-        }
+.kineto__frame,
+.kineto-frame {
+    color: rgb(255, 255, 255);
+    background-color: rgb(74, 101, 114);
+    transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
+}
 
-        .kineto .kineto__slide--active,
-        .kineto .kineto-slide.kineto-active {
-            background-color: rgb(35, 47, 52);
-        }
+.kineto .kineto__slide--active,
+.kineto .kineto-slide.kineto-active {
+    background-color: rgb(35, 47, 52);
+}
 
-        .kineto .kineto__arrow__button,
-        .kineto .kineto-arrow-button {
-            position: absolute;
-            top: 50%;
-            color: rgb(255, 255, 255);
-            transform: translate(0, -50%);
-            transition: opacity 0.3s;
-        }
+.kineto .kineto__arrow__button,
+.kineto .kineto-arrow-button {
+    position: absolute;
+    top: 50%;
+    color: rgb(255, 255, 255);
+    transform: translate(0, -50%);
+    transition: opacity 0.3s;
+}
 
-        .kineto .kineto__arrow__button--previous,
-        .kineto .kineto-previous {
-            left: 1%;
-        }
+.kineto .kineto__arrow__button--previous,
+.kineto .kineto-previous {
+    left: 1%;
+}
 
-        .kineto .kineto__arrow__button--next,
-        .kineto .kineto-next {
-            right: 1%;
-        }
+.kineto .kineto__arrow__button--next,
+.kineto .kineto-next {
+    right: 1%;
+}
 
-        .kineto .kineto__pagination,
-        .kineto .kineto-pagination {
-            position: absolute;
-            right: 0;
-            bottom: 20px;
-            left: 0;
-            color: rgb(249, 170, 51);
-        }
+.kineto .kineto__pagination,
+.kineto .kineto-pagination {
+    position: absolute;
+    right: 0;
+    bottom: 20px;
+    left: 0;
+    color: rgb(249, 170, 51);
+}
 
-        .kineto .kineto__pagination__button,
-        .kineto .kineto-pagination-button {
-            border-radius: 100%;
-            transition: opacity 0.3s;
-        }
+.kineto .kineto__pagination__button,
+.kineto .kineto-pagination-button {
+    border-radius: 100%;
+    transition: opacity 0.3s;
+}
 
-        .kineto .kineto__pagination__button--active,
-        .kineto .kineto-pagination-button.kineto-active {
-            font-weight: 700;
-        }
+.kineto .kineto__pagination__button--active,
+.kineto .kineto-pagination-button.kineto-active {
+    font-weight: 700;
+}
 
-        .kineto .kineto__count,
-        .kineto .kineto-count {
-            position: absolute;
-            top: 10px;
-            right: 15px;
-            color: rgb(249, 170, 51, 0.4);
-        }
+.kineto .kineto__count,
+.kineto .kineto-count {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: rgb(249, 170, 51, 0.4);
+}
 
-        .kineto .kineto__count .current,
-        .kineto .kineto-count .current {
-            color: rgb(249, 170, 51);
-            font-size: 1.2rem;
-            font-style: normal;
-        }
+.kineto .kineto__count .current,
+.kineto .kineto-count .current {
+    color: rgb(249, 170, 51);
+    font-size: 1.2rem;
+    font-style: normal;
+}
 
-        #navigation .kineto__arrow__button,
-        #navigation .kineto-arrow-button {
-            font-size: 1.2rem;
-        }
+#navigation .kineto__arrow__button,
+#navigation .kineto-arrow-button {
+    font-size: 1.2rem;
+}
 
-        #navigation .kineto__pagination__button,
-        #navigation .kineto-pagination-button {
-            width: auto;
-            height: auto;
-            background: transparent;
-            border-radius: 0;
-            box-sizing: border-box;
-            line-height: 20px;
-        }
+#navigation .kineto__pagination__button,
+#navigation .kineto-pagination-button {
+    width: auto;
+    height: auto;
+    background: transparent;
+    border-radius: 0;
+    box-sizing: border-box;
+    line-height: 20px;
+}
 
-        #sync2 .slide {
-            height: 300px;
-            font-size: 2.5rem;
-        }
+#sync2 .slide {
+    height: 300px;
+    font-size: 2.5rem;
+}
 
-        #sync3 .slide {
-            height: 100px;
-            font-size: 1.75rem;
-        }
+#sync3 .slide {
+    height: 100px;
+    font-size: 1.75rem;
+}
 
-        body {
-            background-color: #fafafa;
-        }
+body {
+    background-color: #fafafa;
+}
 
-        h2 {
-            margin: 2rem auto;
-        }
+h2 {
+    margin: 2rem auto;
+}
 
-        .container {
-            margin: 10px auto;
-        }
+.container {
+    margin: 10px auto;
+}
