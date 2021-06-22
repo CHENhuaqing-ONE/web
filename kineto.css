@@ -112,7 +112,7 @@
     width: 100%;
     height: 300px;
     box-sizing: border-box;
-    background-color: rgb(52, 73, 85);
+    background-color: rgb(255, 255, 255);
     line-height: 1.15em;
     font-size: 3rem;
     text-align: center;
@@ -140,26 +140,26 @@
 
 .carousel [tabindex='0']:focus,
 .carousel button:focus {
-    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.6);
 }
 
 .kineto__frame,
 .kineto-frame {
     color: rgb(255, 255, 255);
-    background-color: rgb(74, 101, 114);
+    background-color: rgb(255, 255, 255);
     transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
 }
 
 .kineto .kineto__slide--active,
 .kineto .kineto-slide.kineto-active {
-    background-color: rgb(35, 47, 52);
+    background-color: rgb(255, 255, 255);
 }
 
 .kineto .kineto__arrow__button,
 .kineto .kineto-arrow-button {
     position: absolute;
     top: 50%;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     transform: translate(0, -50%);
     transition: opacity 0.3s;
 }
@@ -244,4 +244,35 @@ h2 {
 
 .container {
     margin: 10px auto;
+}
+
+.div_c_1{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #1b6d85;
+    text-align: center;
+}
+.div_c_2{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #1b6d85;
+    text-align: center;
+}
+
+.div_c_3{
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid #1b6d85;
+    height: 300px;
+    color: #0f0f0f;
+}
+
+.img_c_1{
+    border: 1px solid #0f0f0f;
+    vertical-align: middle;
+}
+.img_c_2{
+    margin: 0 auto;
+    border: 1px solid #0f0f0f;
+    vertical-align: middle;
 }
