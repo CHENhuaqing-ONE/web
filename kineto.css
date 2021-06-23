@@ -148,6 +148,8 @@
     color: rgb(255, 255, 255);
     background-color: rgb(255, 255, 255);
     transition: height 0.25s cubic-bezier(0, 0, 0.2, 1);
+    width: 100%;
+    margin: 0 auto;
 }
 
 .kineto .kineto__slide--active,
@@ -166,12 +168,12 @@
 
 .kineto .kineto__arrow__button--previous,
 .kineto .kineto-previous {
-    left: 1%;
+    left: -8%;
 }
 
 .kineto .kineto__arrow__button--next,
 .kineto .kineto-next {
-    right: 1%;
+    right: -8%;
 }
 
 .kineto .kineto__pagination,
@@ -250,6 +252,7 @@ h2 {
     width: 95%;
     margin: 0 auto;
     text-align: center;
+    border: 1px solid #1b6d85;
 }
 .div_c_2{
     width: 95%;
@@ -262,6 +265,7 @@ h2 {
     margin: 0 auto;
     height: 300px;
     color: #0f0f0f;
+    border: 1px solid #1b6d85;
 }
 
 .img_c_1{
